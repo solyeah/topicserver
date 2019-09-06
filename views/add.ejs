@@ -19,11 +19,18 @@
         </ol>
     
     <article>
-        <form>
+        <!-- <form>
             <% for(var i=0; i<topics.length; i++) {%>
                 <span> <%= topics[i].description %> </span><br>
                 <% } %>
 
+        </form> -->
+        <form action='/topic/add' method="POST">
+            <p><input type="text" name ="title" placeholder="title"></p>
+            <p><textarea name="description" placeholder="description"></textarea></p>
+            <p><input type="text" name="author" placeholder="author"></p>
+            <p><input type="submit" value="submit"></p>
+        
         </form>
     </article>
 </body>

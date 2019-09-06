@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 50%;
+            }
+            
+            td, th {
+              border: 1px solid #f11797;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(odd) {
+              background-color: #facccc;
+            }
+            </style>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>제목</th>
+            <th>설명</th>
+            <th>저자</th>
+        </tr>
+        <tr>
+            <th><%= topic.title %></th>
+            <th><%= topic.description %></th>
+            <th><%= topic.author %></th>
+        </tr>
+    </table>
+    <p><a href="/topic/">되돌아가기</a></p>
+</body>
+</html>
