@@ -9,15 +9,21 @@
 <body>
     <h1><a href='/topic'>Server Program</a></h1>
         <ol>
+            <% for(var i=0; i<topics.length; i++) {%>
             <li>
-                <a href=''>
+                <a href='/topic/<%= topics[i].id %>'>
+                <%= topics[i].title %>
                 </a>
             </li>
+            <% } %>
         </ol>
     
     <article>
         <form>
-            <p>Hello</p>
+            <% for(var i=0; i<topics.length; i++) {%>
+                <span> <%= topics[i].description %> </span><br>
+                <% } %>
+
         </form>
     </article>
 </body>

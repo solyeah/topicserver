@@ -26,7 +26,8 @@ app.get('/topic/add', (req,res)=>{
             res.status(500).send("Internel Server error")
         }
         console.log(result)
-        res.send(result)
+        // res.send(result)
+        res.render('add.ejs',{topics:result})
     })
 })
 // const router = require('./routes')(app)
